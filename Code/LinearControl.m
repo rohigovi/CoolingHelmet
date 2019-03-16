@@ -5,13 +5,14 @@ clc
 
 error=heat_mat-ideal_heatmat;
 %Doing a control by varying amount that the valve is compressed
+
 k1=0.5;
 k2=0.5;
 k3=0.5;
 servo1=0;
 servo2=0;
 servo3=0;
-
+s = serial('COM9','BAUD',9600); %Conflicting with temperature reading?
 if activate(1)
     while(rms(error(1:3,1))>threshold1)
     servo1=servo1+k1*mean(error(1:3,1));
