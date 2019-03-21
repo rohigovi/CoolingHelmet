@@ -17,7 +17,7 @@ if activate(1)
     while(rms(error(1:3,1))>threshold1)
     servo1=servo1+k1*mean(error(1:3,1));
     fopen(s)
-    fprintf(s,'Servo1='+num2str(servo1))
+    fprintf(s,'1')
     end
     
 end
@@ -25,7 +25,7 @@ if activate(2)
     while(rms(error(1:3,2))>threshold2)
     servo2=servo2+k2*mean(error(1:3,2));
     fopen(s)
-    fprintf(s,'Servo2='+num2str(servo2))
+    fprintf(s,'2')
     end
     
 end
@@ -33,7 +33,8 @@ if activate(3)
     while(rms(error(1:3,1))>threshold3)
     servo1=servo1+k3*mean(error(1:3,3));
     fopen(s)
-    fprintf(s,'Servo2='+num2str(servo1))
+    fprintf(s,'3')
+    
     end
     
 end
