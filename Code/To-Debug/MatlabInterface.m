@@ -26,21 +26,21 @@ while (count<300)
         temp1array(end+1)=str2double(idn);
    
         disp(str2double(idn));
-%     
-%     if (temp_mat(1)>20 && temp_mat(1)>temp_mat(2))
-%    
-%     fprintf("1");
-%     disp("Servo turned to 60 degrees:closed channel 1");
-%     pause(1);
-%     fclose(s);
-%     end
-%     if (temp_mat(2)>20 && temp_mat(2)>temp_mat(1))
-%     fprintf("2");
-%     disp("Servo turned to 150 degrees:closed channel 2");
-% 
-%     pause(1);
-%     fclose(s);
-%     end
+     
+     if (temp_mat(1)>20 && temp_mat(1)>temp_mat(2))
+    
+    fprintf("1");
+     disp("Servo turned to 60 degrees:closed channel 1");
+     pause(1);
+     fclose(s);
+     end
+     if (temp_mat(2)>20 && temp_mat(2)>temp_mat(1))
+     fprintf("2");
+     disp("Servo turned to 150 degrees:closed channel 2");
+ 
+     pause(1);
+     fclose(s);
+     end
     count=count+1;
 end
 
