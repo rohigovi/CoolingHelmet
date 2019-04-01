@@ -26,8 +26,8 @@ while ~stop && t < waitTime
     for i=1:9
         temp_mat(i)=str2double(tmp{i});
           %Converting to 3X3 matrix
-        temp_mat(i)=transpose(reshape(temp_mat,3,3));   
     end
+temp_mat(i)=transpose(reshape(temp_mat,3,3));   
   
     
 
