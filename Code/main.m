@@ -13,7 +13,7 @@ temp_mat=readTemperatureIdeal(0.1,false);
 %Tells you which of the three control systems need to be activated.
 activate=ChooseTube(temp_mat,desiredtempmat);
 
-LinearControl(temp_mat,desiredtempmat,false);
+LinearControl(temp_mat,desiredtempmat,activate);
 
 end
 end
